@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   baseUrls: {
-    server: 'http://localhost:5001/',
+    server: 'https://factorymonitor.azurewebsites.net/',
     apiUrl: 'api/',
   },
 };
