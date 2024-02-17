@@ -3,7 +3,7 @@
     <input
       type="text"
       class="form-control mb-2"
-      placeholder="Type message"
+      placeholder="Mesajınız..."
       formControlName="chatmessage"
     />
   </div>
@@ -12,12 +12,11 @@
     [disabled]="form.invalid || !connectionEstablished"
     class="btn btn-primary mb-2"
   >
-    Send
+    Gönder
   </button>
 </form>
-
 <ul class="list-group list-group-flush" *ngFor="let message of chatmessages">
   <li class="list-group-item">
-    {{ message.sent | date: 'medium' }}: {{ message.message }}
+    {{ message.sent | date: 'dd.MM.yyyy HH:mm:ss' }}: {{ message.message }}
   </li>
 </ul>

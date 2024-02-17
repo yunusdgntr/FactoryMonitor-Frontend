@@ -48,7 +48,7 @@ export class DashboardComponent implements OnInit {
   }
 
   deleteFood(item: FoodItem) {
-    if (!confirm('Really delete?')) {
+    if (!confirm('Silmek istediğinizden emin misiniz?')) {
       return;
     }
 
